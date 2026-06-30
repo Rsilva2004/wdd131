@@ -1,0 +1,14 @@
+.basic-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+main {
+    color: #7c7979;
+    flex: 1;
+}
+aside {
+    color: #ffffff;
+    width: 280px;
+}
