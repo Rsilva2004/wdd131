@@ -3,61 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals - Rafael Aranha - course homepage, profile, Brazil information, and web development resources">
+    <meta name="author" content="Rafael Aranha">
     <title>WDD 131 Dynamic Web Fundamentals - Rafael Aranha</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD 131 Dynamic Web Fundamentals</h1>
-     <nav>
-        <a href="https://www.linkedin.com/">LinkedIn</a>
-        <a href="https://byupw.instructure.com/">Canvas</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/morm/9?lang=eng&id=p21#p21">Scripture</a>
-        <a href="#">Final Project</a>
-    </nav>
+       <span id="course-title">WDD 131 Dynamic Web Fundamentals</span>
+       <nav>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <a href="https://byupw.instructure.com/">Canvas</a>
+          <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/morm/9?lang=eng&id=p21#p21">Scripture</a>
+          <a href="#">Final Project</a>
+      </nav>
     </header>
     <main>
-    <div class="card">
-    <h2>About Me</h2>
-
-    <div class="about-content">
-        <p>
-            My name is Rafael. I am a student at BYU-Idaho, by BYU Pathway. I am from Brazil,
-            and I am 21 years old. I am a member of The Church of Jesus Christ of Latter-day Saints,
-            I am looking for a job while I study. My hobbies are playing the piano, playing the guitar,
-            playing videogames and cooking!
-        </p>
-
-        <img src="images/rafael.jpg" alt="Rafael Aranha" class="profile-image">
-    </div>
-
-    <h3>Brazil</h3>
-
-    <div class="country-content">
-        <img src="images/brazil-flag.webp" alt="Brazil flag">
-
-        <p>
-            Brazil is a country in South America. It is the fifth largest country in the world by both area and population.
-            The official language is Portuguese, and the capital city is Brasília.
-            Brazil is known for its diverse culture, beautiful landscapes, and famous landmarks
-            such as the Amazon Rainforest and Christ the Redeemer statue.
-        </p>
-    </div>
-</div>
-        <section>
-              <section class="card">
-           <h2>Web Dev Resources</h2>
+        <h1>Rafael Aranha</h1>
+       <section class="card">
+          <h2>About Me</h2>
+    
+           <div class="about-content">
+               <p>
+                   My name is Rafael. I am a student at BYU-Idaho, by BYU Pathway. I am from Brazil,
+                   and I am 21 years old. I am a member of The Church of Jesus Christ of Latter-day Saints,
+                   I am looking for a job while I study. My hobbies are playing the piano, playing the guitar,
+                   playing videogames and cooking!
+               </p>
+       
+               <img src="images/rafael.jpg" alt="Rafael Aranha" class="profile-image">
+           </div>
+       
+           <h3>Brazil</h3>
+       
+          <div class="country-content">
+              <img src="images/brazil-flag.webp" alt="Brazil flag">
+      
               <p>
-              <a href="https://www.linkedin.com/">LinkedIn</a>
-              <a href="https://www.linkedin.com/">LinkedIn</a>
-              <a href="https://www.linkedin.com/">LinkedIn</a>
-              <a href="https://www.linkedin.com/">LinkedIn</a>
-           </p>
-        </section>
-    </main>
-    <footer>
-        <p> &copy; 2026 Rafael Aranha - Brazil</p>
-    </footer>
+                  Brazil is a country in South America. It is the fifth largest country in the world by both area and population.
+                  The official language is Portuguese, and the capital city is Brasília.
+                  Brazil is known for its diverse culture, beautiful landscapes, and famous landmarks
+                  such as the Amazon Rainforest and Christ the Redeemer statue.
+              </p>
+          </div>
+     </section>
+           <section>
+                 <section class="card">
+              <h2>Web Dev Resources</h2>
+                 <p>
+                 <a href="https://www.linkedin.com/">LinkedIn</a>
+                 <a href="https://www.linkedin.com/">LinkedIn</a>
+                 <a href="https://www.linkedin.com/">LinkedIn</a>
+                 <a href="https://www.linkedin.com/">LinkedIn</a>
+              </p>
+           </section>
+  </main>
+  <footer>
+     <p>
+         &copy; <span id="currentyear"></span> Rafael Aranha - Brazil
+     </p>
+     <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
