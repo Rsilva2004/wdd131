@@ -34,7 +34,7 @@ header{
     content: "\2715"; /* Unicode character for 'X' */
 }
 
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
