@@ -1,5 +1,3 @@
-alert("JavaScript is working");
-
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
