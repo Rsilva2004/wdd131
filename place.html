@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York City</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>New York City</h1>
+
+    </header>
+    <main>
+    <section class="hero">
+
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/jermaine-nyc.jpg">
+            <img src="images/the-statue-of-liberty.jpg" alt="New York Liberty Statue">
+        </picture>
+
+        <section class="data">
+            <h2>Data</h2>
+
+            <p><strong>Area:</strong> 1,213 km²</p>
+            <p><strong>Population:</strong> 8,584,629</p>
+            <p><strong>State:</strong> New York</p>
+            <p><strong>Country:</strong> United States of America</p>
+            <p><strong>Time Zone:</strong> UTC-4</p>
+            <p><strong>Code:</strong> (+1) 718, (+1) 347, (+1) 929, (+1) 465</p>
+            <p><strong>Currency:</strong> US Dollar</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <img src="images/weather_mix.svg" alt="Weather icon">
+
+            <p><strong>Temperature:</strong> 8°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> 12 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
+
+    </section>
+</main>
+    <footer>
+        <p>
+         &copy; <span id="currentyear"></span> Rafael Aranha - Brazil
+        </p>
+     <p id="lastModified"></p>
+     
+
+    </footer>
+    
+</body>
+</html>
