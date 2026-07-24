@@ -1,0 +1,16 @@
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+img {
+    animation: fade 2s;
+     display: block;
+    margin: 0 auto;
+}
+
