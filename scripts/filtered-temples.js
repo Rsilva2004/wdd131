@@ -108,11 +108,12 @@ function displayTemples(temples) {
         image.alt = temple.templeName;
         image.loading = "lazy";
 
+        card.appendChild(image);
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedicated);
         card.appendChild(area);
-        card.appendChild(image);
+        
 
         container.appendChild(card);
     });
@@ -161,6 +162,14 @@ document.querySelector("#small").addEventListener("click", () => {
     });
 
     displayTemples(smallTemples);
+});
+
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    menuButton.classList.toggle("open");
 });
 
 

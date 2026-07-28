@@ -78,7 +78,7 @@ h1 {
     gap: 1rem;
 }
 
-figure {
+.temple-cards section {
     margin: 0;
     background-color: white;
     padding: 0.75rem;
@@ -86,7 +86,7 @@ figure {
     border: 1px solid #ddd;
 }
 
-figure img {
+.temple-cards img {
     width: 100%;
     height: auto;
     display: block;
