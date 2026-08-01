@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product Review Form">
+    <meta name="description" content="Product Review Form. This Form is a way to see your opinion abouta product, and then, we can see ways to improve after you fill in it.">
     <meta name="author" content="Rafael Bruno Aranha da Silva">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,10 +35,6 @@
                 <option value="" selected disabled>
                     Select a Product ...
                 </option>
-
-                  <option value="ps5">PlayStation 5</option>
-                  <option value="xbox">Xbox Series X</option>
-                  <option value="switch">Nintendo Switch</option>
 
             </select>
         </div>
@@ -111,50 +107,33 @@
 
 
         <fieldset>
-
-            <legend>
-                Useful Features
-                <br>
-                (Check all that apply)
-            </legend>
-
-            <label for="durability">
-                <input
-                    type="checkbox"
-                    id="durability"
-                    name="features"
-                    value="Durability">
-                Durability
-            </label>
-
-            <label for="ease">
-                <input
-                    type="checkbox"
-                    id="ease"
-                    name="features"
-                    value="Ease of Use">
-                Ease of Use
-            </label>
-
-            <label for="performance">
-                <input
-                    type="checkbox"
-                    id="performance"
-                    name="features"
-                    value="Performance">
-                Performance
-            </label>
-
-            <label for="design">
-                <input
-                    type="checkbox"
-                    id="design"
-                    name="features"
-                    value="Design">
-                Design
-            </label>
-
-        </fieldset>
+        <legend>Overall Rating *</legend>
+    
+        <label for="star1">
+            <input type="radio" id="star1" name="rating" value="1" required>
+            ☆
+        </label>
+    
+        <label for="star2">
+            <input type="radio" id="star2" name="rating" value="2" required>
+            ☆☆
+        </label>
+    
+        <label for="star3">
+            <input type="radio" id="star3" name="rating" value="3" required>
+            ☆☆☆
+        </label>
+    
+        <label for="star4">
+            <input type="radio" id="star4" name="rating" value="4" required>
+            ☆☆☆☆
+        </label>
+    
+        <label for="star5">
+            <input type="radio" id="star5" name="rating" value="5" required>
+            ☆☆☆☆☆
+        </label>
+    </fieldset>
 
         <div>
 
