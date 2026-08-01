@@ -22,160 +22,159 @@
 
 <main>
 
-<form method="get" action="review.html">
-
-    <!-- Product Name -->
-    <div>
-
-        <label for="product">Product Name *</label>
-
-        <select id="product" name="product" required>
-
-            <option value="" selected disabled>
-                Select a Product ...
-            </option>
-
-        </select>
-
-    </div>
-
-    <!-- Overall Rating -->
-    <fieldset>
-
-        <legend>Overall Rating *</legend>
-
-        <label for="star1">
-            <input type="radio" id="star1" name="rating" value="1" required>
-            ☆
-        </label>
-
-        <label for="star2">
-            <input type="radio" id="star2" name="rating" value="2" required>
-            ☆☆
-        </label>
-
-        <label for="star3">
-            <input type="radio" id="star3" name="rating" value="3" required>
-            ☆☆☆
-        </label>
-
-        <label for="star4">
-            <input type="radio" id="star4" name="rating" value="4" required>
-            ☆☆☆☆
-        </label>
-
-        <label for="star5">
-            <input type="radio" id="star5" name="rating" value="5" required>
-            ☆☆☆☆☆
-        </label>
-
-    </fieldset>
-
-    <!-- Installation Date -->
-    <div>
-
-        <label for="installDate">
-            Date of Installation *
-        </label>
-
-        <input
-            type="date"
-            id="installDate"
-            name="installDate"
-            required>
-
-    </div>
-
-    <fieldset>
-
-    <legend>Useful Features (Check all that apply)</legend>
-
-    <label for="durability">
-        <input
-            type="checkbox"
-            id="durability"
-            name="features"
-            value="Durability">
-        Durability
-    </label>
-
-    <label for="easeofuse">
-        <input
-            type="checkbox"
-            id="easeofuse"
-            name="features"
-            value="Ease of Use">
-        Ease of Use
-    </label>
-
-    <label for="performance">
-        <input
-            type="checkbox"
-            id="performance"
-            name="features"
-            value="Performance">
-        Performance
-    </label>
-
-    <label for="design">
-        <input
-            type="checkbox"
-            id="design"
-            name="features"
-            value="Design">
-        Design
-    </label>
-
-</fieldset>hmm
-
-    <!-- Written Review -->
-    <div>
-
-        <label for="review">
-            Written Review
-        </label>
-
-        <textarea
-            id="review"
-            name="review"
-            rows="6"></textarea>
-
-    </div>
-
-    <!-- User Name -->
-    <div>
-
-        <label for="username">
-            User Name
-        </label>
-
-        <input
-            type="text"
-            id="username"
-            name="username">
-
-    </div>
-
-    <!-- Submit -->
-    <input
-        type="submit"
-        value="Submit Review">
-
-</form>
+   <form method="get" action="review.html">
+   
+       <!-- Product Name -->
+       <div>
+   
+           <label for="product">Product Name *</label>
+   
+           <select id="product" name="product" required>
+   
+               <option value="" selected disabled>
+                   Select a Product ...
+               </option>
+   
+           </select>
+   
+       </div>
+   
+       <!-- Overall Rating -->
+       <fieldset>
+   
+           <legend>Overall Rating *</legend>
+   
+           <label for="star1">
+               <input type="radio" id="star1" name="rating" value="1" required>
+               ☆
+           </label>
+   
+           <label for="star2">
+               <input type="radio" id="star2" name="rating" value="2" required>
+               ☆☆
+           </label>
+   
+           <label for="star3">
+               <input type="radio" id="star3" name="rating" value="3" required>
+               ☆☆☆
+           </label>
+   
+           <label for="star4">
+               <input type="radio" id="star4" name="rating" value="4" required>
+               ☆☆☆☆
+           </label>
+   
+           <label for="star5">
+               <input type="radio" id="star5" name="rating" value="5" required>
+               ☆☆☆☆☆
+           </label>
+   
+       </fieldset>
+   
+       <!-- Installation Date -->
+       <div>
+   
+           <label for="installDate">
+               Date of Installation *
+           </label>
+   
+           <input
+               type="date"
+               id="installDate"
+               name="installDate"
+               required>
+   
+       </div>
+   
+       <fieldset>
+   
+             <legend>Useful Features (Check all that apply)</legend>
+         
+             <label for="durability">
+                 <input
+                     type="checkbox"
+                     id="durability"
+                     name="features"
+                     value="Durability">
+                 Durability
+             </label>
+         
+             <label for="easeofuse">
+                 <input
+                     type="checkbox"
+                     id="easeofuse"
+                     name="features"
+                     value="Ease of Use">
+                 Ease of Use
+             </label>
+         
+             <label for="performance">
+                 <input
+                     type="checkbox"
+                     id="performance"
+                     name="features"
+                     value="Performance">
+                 Performance
+             </label>
+         
+             <label for="design">
+                 <input
+                     type="checkbox"
+                     id="design"
+                     name="features"
+                     value="Design">
+                 Design
+             </label>
+      </fieldset>
+   
+       <!-- Written Review -->
+       <div>
+   
+           <label for="review">
+               Written Review
+           </label>
+   
+           <textarea
+               id="review"
+               name="review"
+               rows="6"></textarea>
+   
+       </div>
+   
+       <!-- User Name -->
+       <div>
+   
+           <label for="username">
+               User Name
+           </label>
+   
+           <input
+               type="text"
+               id="username"
+               name="username">
+   
+       </div>
+   
+       <!-- Submit -->
+       <input
+           type="submit"
+           value="Submit Review">
+   
+   </form>
 
 </main>
-
-<footer>
-
-    <p>
-        &copy;
-        <span id="currentyear"></span>
-        | Rafael Bruno Aranha da Silva | Brazil
-    </p>
-
-    <p id="lastModified"></p>
-
-</footer>
-
+ 
+ <footer>
+ 
+     <p>
+         &copy;
+         <span id="currentyear"></span>
+         | Rafael Bruno Aranha da Silva | Brazil
+     </p>
+ 
+     <p id="lastModified"></p>
+ 
+ </footer>
+ 
 </body>
 </html>
