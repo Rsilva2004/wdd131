@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Aranha">
+    <meta name="description" content="Let's find out which console is the best for you! Take the quiz and discover your ideal gaming platform.">
+    <link rel="stylesheet" href="styles/gameverse.css">
+    <link rel="stylesheet" href="styles/gameverse-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="scripts/gameverse.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <title>Choose Your Console</title>
+</head>
+<body>
+    <header>
+        <img src="images/ps_vs_xbox.jpg" alt="Logo">
+         <button id="menu" aria-label="Open navigation"></button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="playstation.html">PlayStation</a>
+            <a href="xbox.html">Xbox</a>
+            <a href="choose.html">Choose Your Console</a>
+        </nav>
+        <h1>Choose Your Console</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+           <h2>Find Your Perfect Console</h2>
+       
+           <p>
+               Answer a few questions and discover which gaming console best matches your preferences.
+           </p>
+        </section>
+        <section class="quiz-intro">
+            <h2>Discover Your Ideal Gaming Console</h2>
+            <p>Take the quiz below to find out which console best matches your gaming style and preferences.</p>
+        </section>
+        <form id="consoleForm">
+             <fieldset>
+               
+               <legend>
+               
+               What is your budget?
+               
+               </legend>
+               
+               <label>
+               
+               <input type="radio"
+               name="budget"
+               value="xbox"
+               required>
+               
+               Less than $400
+               
+               </label>
+               
+               <label>
+               
+               <input type="radio"
+               name="budget"
+               value="playstation">
+               
+               More than $400
+               
+               </label>
+               
+            </fieldset>
+             <fieldset>
+               
+               <legend>
+               
+               What matters most to you in a console?
+               
+               </legend>
+               
+               <label>
+               
+               <input type="radio"
+               name="priority"
+               value="xbox"
+               required>
+               
+               Graphics and Performance
+               
+               </label>
+               
+               <label>
+               
+               <input type="radio"
+               name="priority"
+               value="playstation">
+               
+               Exclusive Games
+               
+               </label>
+               
+            </fieldset>
+             <fieldset>
+               
+               <legend>
+               
+               Do your friends mostly play on...
+               
+               </legend>
+               
+               <label>
+               
+               <input type="radio"
+               name="friends"
+               value="xbox"
+               required>
+               
+               Xbox
+               
+               </label>
+               
+               <label>
+               
+               <input type="radio"
+               name="friends"
+               value="playstation">
+               
+                PlayStation
+               
+               </label>
+               
+            </fieldset>
+             <fieldset>
+               
+               <legend>
+               
+               What do you play most?
+               
+               </legend>
+               
+               <label>
+               
+               <input type="radio"
+               name="games"
+               value="xbox"
+               required>
+               
+                Action and Shooter Games
+               
+               </label>
+               
+               <label>
+               
+               <input type="radio"
+               name="games"
+               value="playstation">
+               
+               Role-playing and Adventure Games
+               
+               </label>
+               
+            </fieldset>
+             <fieldset>
+               
+               <legend>
+               
+                How important is backward compatibility to you?
+               
+               </legend>
+               
+               <label>
+               
+               <input type="radio"
+               name="compatibility"
+               value="xbox"
+               required>
+               
+                Very Important
+               
+               </label>
+               
+               <label>
+               
+               <input type="radio"
+               name="compatibility"
+               value="playstation">
+               
+                Not Important
+               
+               </label>
+               
+            </fieldset>
+            <fieldset>
+               
+               <legend>
+               
+                Would you like to subscribe to a game subscription service?
+               
+               </legend>
+               
+               <label>
+               
+               <input type="radio"
+               name="service"
+               value="xbox"
+               required>
+               
+                Yes, I want access to a large library of games
+               
+               </label>
+               
+               <label>
+               
+               <input type="radio"
+               name="service"
+               value="playstation">
+               
+                No, I prefer to buy games individually
+               
+               </label>
+            </fieldset>
+             <fieldset>
+               
+               <legend>
+               
+                How important is online multiplayer to you?
+               
+               </legend>
+               
+               <label>
+               
+               <input type="radio"
+               name="multiplayer"
+               value="xbox"
+               required>
+               
+                Very Important
+               
+               </label>
+               
+               <label>
+               
+               <input type="radio"
+               name="multiplayer"
+               value="playstation">
+               
+                Not Important
+               
+               </label>
+               
+            </fieldset>
+               
+            <button type="submit">
+
+              Discover My Console
+            
+            </button>
+        </form>
+        <section id="result">
+
+        <h2>Your Result</h2>
+
+        <div id="recommendation"></div>
+
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; GameVerse; <span id="currentyear"></span> Rafael Aranha - Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>

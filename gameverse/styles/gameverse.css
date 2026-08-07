@@ -1,0 +1,521 @@
+:root{
+    --background: #111827;
+    --surface: #1F2937;
+    --surface-light: #374151;
+
+    --text: #FFFFFF;
+    --text-light: #D1D5DB;
+
+    --playstation: #006FCD;
+    --xbox: #107C10;
+
+    --accent: #F59E0B;
+
+    --shadow: 0 8px 20px rgba(0,0,0,.35);
+
+    --radius: 12px;
+
+    --transition: .3s ease;
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:'Roboto', sans-serif;
+
+    line-height:1.7;
+
+}
+
+/* ===========================
+   GLOBAL
+=========================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+    border-radius:var(--radius);
+
+}
+
+section{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+    padding:4rem 0;
+
+}
+
+h1,
+h2,
+h3{
+
+    font-family:'Orbitron', sans-serif;
+
+    margin-bottom:1rem;
+
+}
+
+p{
+
+    color:var(--text-light);
+
+    margin-bottom:1rem;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:white;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    background:#0b1220;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1rem 5%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+    box-shadow:var(--shadow);
+
+}
+
+header img{
+
+    width:65px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:2rem;
+
+}
+
+nav a{
+
+    transition:var(--transition);
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    color:var(--accent);
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:4rem;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:3rem;
+
+}
+
+.hero-text p{
+
+    font-size:1.1rem;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+}
+
+.hero-image img{
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.button,
+button{
+
+    display:inline-block;
+
+    margin-top:1rem;
+
+    background:var(--playstation);
+
+    color:white;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    font-weight:bold;
+
+}
+
+.button:hover,
+button:hover{
+
+    transform:translateY(-3px);
+
+    background:var(--xbox);
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.cards,
+.games-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:2rem;
+
+}
+
+.card,
+.game-card{
+
+    background:var(--surface);
+
+    padding:1.5rem;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.card:hover,
+.game-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card img,
+.game-card img{
+
+    margin-bottom:1rem;
+
+}
+
+.card a{
+
+    display:inline-block;
+
+    margin-top:1rem;
+
+    color:var(--accent);
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   TIMELINE
+=========================== */
+
+.timeline article{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:2rem;
+
+    align-items:center;
+
+    background:var(--surface);
+
+    padding:2rem;
+
+    margin-bottom:2.5rem;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.timeline article:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.timeline img{
+
+    width:100%;
+
+    max-width:400px;
+
+    margin:auto;
+
+}
+
+.timeline h3{
+
+    color:var(--accent);
+
+}
+
+.timeline p{
+
+    margin-bottom:0;
+
+}
+
+/* ===========================
+   FUN FACTS
+=========================== */
+
+.fun-facts ul{
+
+    display:grid;
+
+    gap:1rem;
+
+}
+
+.fun-facts li{
+
+    background:var(--surface);
+
+    padding:1rem;
+
+    border-left:5px solid var(--accent);
+
+    border-radius:8px;
+
+}
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta{
+
+    text-align:center;
+
+}
+
+.cta a{
+
+    display:inline-block;
+
+    margin-top:1.5rem;
+
+    background:var(--playstation);
+
+    padding:15px 30px;
+
+    border-radius:8px;
+
+    transition:var(--transition);
+
+}
+
+.cta a:hover{
+
+    background:var(--xbox);
+
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+form{
+
+    width:min(900px,95%);
+
+    margin:auto;
+
+}
+
+fieldset{
+
+    border:2px solid var(--surface-light);
+
+    margin-bottom:2rem;
+
+    padding:1.5rem;
+
+    border-radius:10px;
+
+}
+
+legend{
+
+    padding:0 .5rem;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+label{
+
+    display:block;
+
+    margin:.8rem 0;
+
+    cursor:pointer;
+
+}
+
+input{
+
+    margin-right:.5rem;
+
+}
+
+/* ===========================
+   RESULT
+=========================== */
+
+#result{
+
+    display:none;
+
+    margin-top:3rem;
+
+    background:var(--surface);
+
+    padding:2rem;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:4rem;
+
+    background:#0b1220;
+
+    text-align:center;
+
+    padding:2rem;
+
+}
+
+footer p{
+
+    margin:.4rem;
+
+}
+
+#menu{
+    display:block;
+}
+
+nav{
+    display:none;
+}
+
+nav.open{
+    display:flex;
+}
+
+#menu::before{
+    content: "\2630"; /* Unicode character for hamburger menu */
+}

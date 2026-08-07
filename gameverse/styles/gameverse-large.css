@@ -1,0 +1,170 @@
+@media screen and (min-width: 768px) {
+
+    /* ---------- HEADER ---------- */
+
+    header{
+        padding: 1rem 8%;
+    }
+
+    nav{
+        gap: 2.5rem;
+    }
+
+    /* ---------- HERO ---------- */
+
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .hero-text h1{
+        font-size: 3.5rem;
+    }
+
+    .hero-text p{
+        font-size: 1.2rem;
+    }
+
+    /* ---------- HOME CARDS ---------- */
+
+    .cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    /* ---------- GAME CARDS ---------- */
+
+    .games-container{
+        grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    }
+
+    /* ---------- TIMELINE ---------- */
+
+    .timeline article{
+
+        display:grid;
+
+        grid-template-columns:320px 1fr;
+
+        gap:2rem;
+
+        align-items:center;
+
+    }
+
+    .timeline article:nth-child(even){
+
+        grid-template-columns:1fr 320px;
+
+    }
+
+    .timeline article:nth-child(even) img{
+
+        order:2;
+
+    }
+
+    .timeline article:nth-child(even) h3,
+
+    .timeline article:nth-child(even) p{
+
+        order:1;
+
+    }
+
+    /* ---------- ABOUT ---------- */
+
+    .about{
+
+        text-align:center;
+
+        max-width:900px;
+
+    }
+
+    /* ---------- FORM ---------- */
+
+    form{
+
+        max-width:850px;
+
+    }
+
+    fieldset{
+
+        padding:2rem;
+
+    }
+
+    /* ---------- RESULT ---------- */
+
+    #result{
+
+        max-width:800px;
+
+        margin:auto;
+
+        margin-top:3rem;
+
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    footer{
+
+        padding:3rem;
+
+    }
+
+}
+
+/* ===========================
+   EXTRA LARGE
+=========================== */
+
+@media screen and (min-width: 1200px){
+
+    section{
+
+        width:1200px;
+
+    }
+
+    .hero-text h1{
+
+        font-size:4rem;
+
+    }
+
+    .hero-text p{
+
+        font-size:1.25rem;
+
+    }
+
+    .card,
+
+    .game-card{
+
+        padding:2rem;
+
+    }
+
+    .timeline article{
+
+        gap:3rem;
+
+    }
+
+}
+@media screen and (min-width:768px){
+
+    #menu{
+        display:none;
+    }
+
+    nav{
+        display:flex;
+    }
+
+}
